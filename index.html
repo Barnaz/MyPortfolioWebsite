@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Barituka Naziga- Portfolio</title>
+    <link rel="stylesheet" href="./style.css" />
+    <script src="./script.js"></script>
+  </head>
+  <body>
+    <!-- Navigation Bar -->
+    <nav>
+      <div id="home">
+        <div class="profile_name">
+          Barituka Naziga
+          <div class="contact_info">
+            <img
+              src="html_finalprojimages/envelope.png"
+              alt="https://icons8.com/icon/124377/circled-envelope"
+            />
+            jdoe@jeemail.com
+          </div>
+          <div style="clear: both"></div>
+          <div class="contact_info">
+            <img
+              src="html_finalprojimages/phone.png"
+              alt="https://icons8.com/icon/124377/circled-envelope"
+            />
+            +13456764598
+          </div>
+        </div>
+        <div class="topdiv">
+          <a class="topmenu" href="#about-me">About Me</a>
+          <a class="topmenu" href="#skills">Skills</a>
+          <a class="topmenu" href="#projects">Projects</a>
+          <a class="topmenu" href="#recommendations">Recommendations</a>
+        </div>
+      </div>
+    </nav>
+
+    <!-- About Me -->
+    <section id="about-me" class="container">
+      <div>
+        <img
+          src="./html_finalprojimages/MyPhoto.jpg"
+          class="profile_image"
+          style="margin-right: 20px; margin-top: 10px; border-radius: 15px"
+        />
+      </div>
+
+      <div>
+        <h1>
+          Hi, I'm Barituka Naziga!
+          <img src="./html_finalprojimages/MyPhoto.jpg" width="60px" />
+        </h1>
+
+        <p>
+          My name is Barituka Naziga. I am a high school senior who will be
+          attending the University of Calgary in the fall. I want to become a
+          software engineer. My goal is to be vast in modern software
+          technologies that would qualify me to work for tech giants like Meta,
+          Apple and IBM. Getting a degree in Computer Science with a focus on
+          software engineering will set me up for a fulfilling, fast-paced
+          career fit for the future.
+        </p>
+      </div>
+    </section>
+
+    <!-- Skills -->
+    <section id="skills">
+      <h2>Skills</h2>
+      <div style="clear: both"></div>
+
+      <div class="all_skills">
+        <div class="skill">
+          <img src="html_finalprojimages/html5.png" />
+          <h6>HTML</h6>
+          <p>2 years experience</p>
+        </div>
+
+        <div class="skill">
+          <img src="html_finalprojimages/CSS3.png" />
+          <h6>CSS</h6>
+          <p>2 years experience</p>
+        </div>
+
+        <div class="skill">
+          <img src="html_finalprojimages/js.jpeg" />
+          <h6>JavaScript</h6>
+          <p>3 years experience</p>
+        </div>
+
+        <div class="skill">
+          <img src="html_finalprojimages/react.png" />
+          <h6>ReactJs</h6>
+          <p>2 years experience</p>
+        </div>
+
+        <div class="skill">
+          <img src="html_finalprojimages/node.png" />
+          <h6>NodeJs</h6>
+          <p>1 year experience</p>
+        </div>
+
+        <div class="skill">
+          <img src="html_finalprojimages/java.png" />
+          <h6>Java</h6>
+          <p>1 year experience</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects -->
+    <section class="projects" id="projects">
+      <h2>Projects</h2>
+      <div style="clear: both"></div>
+
+      <div id="projects-container" class="projects-container">
+        <div class="project-card">
+          <h3>Budgety</h3>
+          <ul>
+            <li>
+              Accepts entries for made income and expenses, and calculates what
+              percentage each expense makes of the total income
+            </li>
+          </ul>
+        </div>
+        <hr />
+        <div class="project-card">
+          <h3>Countdown Timer</h3>
+          <ul>
+            <li>
+              The clock ticks and the time left for the expiry of a giveaway
+              iphone is displayed
+            </li>
+          </ul>
+        </div>
+        <hr />
+        <div class="project-card">
+          <h3>Reviews App</h3>
+          <ul>
+            <li>
+              A means is provided for navigation through an array of reviews,
+              either going forward, backward or randomly
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <div style="clear: both"></div>
+
+    <!-- Recommendations -->
+    <section id="recommendations">
+      <h2>Recommendations</h2>
+      <div style="clear: both"></div>
+      <div class="all_recommendations" id="all_recommendations">
+        <div class="recommendation">
+          <span>&#8220;</span>
+          It is a great pleasure to recommend Barituka for admission to your
+          degree program in software engineering. He is one of the most
+          exceptional students I have encountered in my 15 years of teaching.
+          <span>&#8221;</span>
+        </div>
+        <div class="recommendation">
+          <span>&#8220;</span>
+          I had the pleasure of teaching Barituka in his 11th grade honors
+          English class at Mark Twain High School. From the first day of class,
+          Barituka impressed me with his ability to be articulate about
+          difficult concepts and texts.
+          <span>&#8221;</span>
+        </div>
+        <div class="recommendation">
+          <span>&#8220;</span>
+          It is hard to overstate the meaningful contributions that Barituka has
+          made to our school and surrounding community. As both his 10th and
+          11th grade Physics teacher, I've had the pleasure of seeing Barituka
+          make profound contributions both in and out of the classroom.
+          <span>&#8221;</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Recommendation Form -->
+    <section id="contact">
+      <div class="flex_center">
+        <fieldset style="border-radius: 10px">
+          <legend class="introduction">Leave a Recommendation</legend>
+          <input type="text" placeholder="Name (Optional)" /> <br />
+          <textarea
+            id="new_recommendation"
+            cols="500"
+            rows="10"
+            placeholder="Message"
+          ></textarea>
+          <div class="flex_center">
+            <button id="recommend_btn" onclick="addRecommendation()">
+              Submit
+            </button>
+          </div>
+        </fieldset>
+      </div>
+    </section>
+
+    <div class="iconbutton">
+      <a href="#home">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke-width="1.5"
+          stroke="white"
+          width="63px"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M15 11.25l-3-3m0 0l-3 3m3-3v7.5M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
+          />
+        </svg>
+      </a>
+    </div>
+
+    <div class="popup" id="popup" class="flex_center">
+      <img src="html_finalprojimages/checkmark--outline.svg" />
+      <h3>Thanks for leaving a recommendation</h3>
+      <button onclick="showPopup(false)">Ok</button>
+    </div>
+  </body>
+</html>
